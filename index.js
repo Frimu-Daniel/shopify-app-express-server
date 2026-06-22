@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('<h1>Request has been sent</h1>');
+    res.send({ message: 'It is working!' });
 });
 
 app.listen(3000, () => console.log('App listening on port 3000'));
